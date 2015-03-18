@@ -24,5 +24,15 @@ namespace DynamicMenu.Domain
 
             return menu.ToList();
         }
+
+        public IEnumerable<User> getUsers()
+        {
+            var users = new List<User>();
+            users.Add(new User { Id = 1, user = "admin", password = "12345", estatus = true, RememberMe = true });
+            users.Add(new User { Id = 2, user = "lvasquez", password = "lvasquez", estatus = true, RememberMe = false });
+            users.Add(new User { Id = 3, user = "invite", password = "12345", estatus = false, RememberMe = false });
+
+            return users.ToList();
+        }
     }
 }

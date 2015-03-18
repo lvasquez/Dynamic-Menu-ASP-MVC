@@ -7,9 +7,11 @@ using System.Web.Mvc;
 
 namespace DynamicMenu.Controllers
 {
+    
     public class NavbarController : Controller
     {
         // GET: Navbar
+
         public ActionResult Navbar()
         {
 
